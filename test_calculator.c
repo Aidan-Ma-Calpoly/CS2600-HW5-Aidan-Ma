@@ -73,19 +73,20 @@ void test_multiply_zero(void){
 }
 
 void test_divide_positive_numbers(void){
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(9, divide(81,9));
 }
 
 void test_divide_positive_and_negative_numbers(void){
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(-8, divide(40,-5));
 }
 
 void test_divide_negative_numbers(void){
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(5, divide(-25,-5));
 }
 
 void test_divide_zero(void){
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(0, divide(999,0));
+    TEST_ASSERT_EQUAL(0, divide(0,1335));
 }
 
 int main(void){
