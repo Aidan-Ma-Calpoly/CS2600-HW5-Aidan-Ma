@@ -39,23 +39,20 @@ void test_add_underflow(void){
 }
 
 void test_subtract_positive_numbers(void){
-    //Empty (TDD)
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(10, subtract(20,10));
 }
 
 void test_subtract_positive_and_negative_numbers(void){
-    //Empty (TDD)
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(10, subtract(5,-5));
 }
 
 void test_subtract_negative_numbers(void){
-    //Empty (TDD)
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(10, subtract(-15,-25));
 }
 
 void test_subtract_zero(void){
-    //Empty (TDD)
-    TEST_ASSERT_TRUE(0);
+    TEST_ASSERT_EQUAL(5, subtract(5,0));
+    TEST_ASSERT_EQUAL(-5, subtract(0,5));
 }
 
 int main(void){
