@@ -56,23 +56,20 @@ void test_subtract_zero(void){
 }
 
 void test_multiply_positive_numbers(void){
-    TEST_ASSERT_TRUE(0);
-    //Set function 0 (Undefined)
+    TEST_ASSERT_EQUAL(12, multiply(3,4));
 }
 
 void test_multiply_positive_and_negative_numbers(void){
-    TEST_ASSERT_TRUE(0);
-    //Set function 0 (Undefined)
+    TEST_ASSERT_EQUAL(-15, multiply(-3,5));
 }
 
 void test_multiply_negative_numbers(void){
-    TEST_ASSERT_TRUE(0);
-    //Set function 0 (Undefined)
+    TEST_ASSERT_EQUAL(42, multiply(-6,-7));
 }
 
 void test_multiply_zero(void){
-    TEST_ASSERT_TRUE(0);
-    //Set function 0 (Undefined)
+    TEST_ASSERT_EQUAL(0, multiply(999,0));
+    TEST_ASSERT_EQUAL(0, multiply(0,1335));
 }
 
 int main(void){
