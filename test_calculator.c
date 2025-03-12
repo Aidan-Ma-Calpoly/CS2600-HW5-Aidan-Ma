@@ -38,6 +38,26 @@ void test_add_underflow(void){
     TEST_ASSERT_TRUE(result > 0);
 }
 
+void test_subtract_positive_numbers(void){
+    //Empty (TDD)
+    TEST_ASSERT_TRUE(0);
+}
+
+void test_subtract_positive_and_negative_numbers(void){
+    //Empty (TDD)
+    TEST_ASSERT_TRUE(0);
+}
+
+void test_subtract_negative_numbers(void){
+    //Empty (TDD)
+    TEST_ASSERT_TRUE(0);
+}
+
+void test_subtract_zero(void){
+    //Empty (TDD)
+    TEST_ASSERT_TRUE(0);
+}
+
 int main(void){
     UNITY_BEGIN();
     RUN_TEST(test_add_positive_numbers);
@@ -46,5 +66,9 @@ int main(void){
     RUN_TEST(test_add_zero);
     RUN_TEST(test_add_overflow);
     RUN_TEST(test_add_underflow);
+    RUN_TEST(test_subtract_positive_numbers);
+    RUN_TEST(test_subtract_positive_and_negative_numbers);
+    RUN_TEST(test_subtract_negative_numbers);
+    RUN_TEST(test_subtract_zero);
     return UNITY_END();
 }
